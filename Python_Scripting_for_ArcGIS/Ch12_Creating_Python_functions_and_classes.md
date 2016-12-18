@@ -1,15 +1,22 @@
 # Chapter 12: Creating Python functions and classes  
-12.1 Introduction  
-12.2 Creating functions  
-12.3 Calling functions from other scripts  
-12.4 Organizing code into modules  
-12.5 Using classes  
-12.6 Working with packages  
-Points to remember  
+
+<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
+
+- [Chapter 12: Creating Python functions and classes](#chapter-12-creating-python-functions-and-classes)
+	- [12.1 Introduction](#121-introduction)
+	- [12.2 Creating functions](#122-creating-functions)
+	- [12.3 Calling functions from other scripts](#123-calling-functions-from-other-scripts)
+	- [12.4 Organizing code into modules](#124-organizing-code-into-modules)
+	- [12.5 Using classes](#125-using-classes)
+	- [12.6 Working with packages](#126-working-with-packages)
+	- [Points to remember](#points-to-remember)
+
+<!-- tocstop -->
+
 
 ---
 ## 12.1 Introduction  
- 
+
 ## 12.2 Creating functions  
 * The following code generates a random number between 1 and 100:  
 ```python
@@ -17,7 +24,7 @@ import random
 x = random.randint(1, 100)
 print x
 ```
- 
+
 * Python functions are de fined using the def statement, as shown in the figure.  
 The def statement contains the name of the function, followed by any arguments in parens.  
 The syntax of the def statement is.  
@@ -62,7 +69,7 @@ For example, it is likely you will need to replace the parameter "streams.shp" w
 First, you need to give the function a name - for example, listfieldnames.  
 The following code defines the function:  
 ```python
-def listfieldnames(): 
+def listfieldnames():
 ```
 
 * You can now call the function from elsewhere in the script by name.  
@@ -100,7 +107,7 @@ def listfieldnames(table):
 ```python
 fieldnames = listfieldnames("C:/Data/hospitals.shp")
 ```
-  
+
 ## 12.3 Calling functions from other scripts  
 * Once functions are created in a script, they can be called from another script by importing the script that contains the function.  
 For relatively complex functions, it is worthwhile to consider making them into separate scripts or script tools, especially if they are needed on a regular basis.  
@@ -159,7 +166,7 @@ C:\program Files\ArcGIS\Desktop10.1\ArcToolbox\Scripts
 You have two options, as follows:  
 	1. Use a path configuration file (.pth).
 	2. Append the path using code.
-	
+
 ## 12.4 Organizing code into modules  
 * By creating a script that defines a custom function, you are turning the script into a module.  
 All Python script files are, in fact, modules.  
@@ -211,7 +218,7 @@ if __name__ == '__main__':
 ```
 
 * This structure provides control of the running of the script and makes it possible to use a script in two different ways - running it by itself or calling it from another script.  
- 
+
 ## 12.5 Using classes  
 * To make a class in Python, you use the keyword class.  
 Take a look at a simple example:  
@@ -277,8 +284,7 @@ print "Land use:", myparcel.landuse
 mytax = myparcel.assessment()
 print mytax
 ```
- 
+
 ## 12.6 Working with packages  
- 
+
 ## Points to remember  
- 
